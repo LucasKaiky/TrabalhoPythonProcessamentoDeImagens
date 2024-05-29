@@ -50,7 +50,6 @@ def apply_filter(image_path, choice):
     return filtered_image
 
 def main():
-    # Caminho absoluto para a imagem
     image_path = "./fotoTeste.jpg"
     print("Escolha um filtro para aplicar à imagem:")
     print("1. Filtro de Média (Blur)")
@@ -71,7 +70,6 @@ def main():
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
-        # Gerar o nome do arquivo de saída
         base_name = "fotoResultado"
         ext = ".jpg"
         save_dir = os.path.dirname(image_path)
